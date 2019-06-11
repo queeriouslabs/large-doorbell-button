@@ -5,7 +5,7 @@ print('Starting doorbell...')
 
 def within_valid_timerange(last_event_timestamp, event):
   return not last_event_timestamp or \
-             last_event_timestamp + 5 <= event.timestamp()
+             last_event_timestamp + 2 <= event.timestamp()
 
 def is_enter_keydown(event):
   evcat = evdev.categorize(event)
