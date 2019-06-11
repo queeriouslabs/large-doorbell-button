@@ -14,4 +14,4 @@ for event in kb.read_loop():
   if should_ring(event):
     wave_obj = simpleaudio.WaveObject.from_wave_file("tng_chime.wav")
     play_obj = wave_obj.play()
-    play.obj.wait_done()
+    play_obj.wait_done()
