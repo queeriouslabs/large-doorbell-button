@@ -4,7 +4,8 @@ import simpleaudio
 print('Starting doorbell...')
 
 def within_valid_timerange(last_event_timestamp, event):
-  return last_event_timestamp + 5000 <= event.timestamp()
+  return not last_event_timestamp or \
+             last_event_timestamp + 5000 <= event.timestamp()
 
 def is_enter_keydown(event):
   evcat = evdev.categorize(event)
