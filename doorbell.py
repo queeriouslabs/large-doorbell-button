@@ -20,7 +20,7 @@ devices = [evdev.InputDevice(path) for path in evdev.list_devices()]
 button_path = None
 for device in devices:
   print(device.path, device.name, device.phys)
-  if 'SIGMACHI' in device.name:
+  if 'SIGMACHIP' in device.name:
     button_path = device.path
 
 if not button_path:
