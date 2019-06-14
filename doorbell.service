@@ -5,7 +5,7 @@ Description=Front Doorbell
 WorkingDirectory=/home/pi/Projects/large-doorbell-button/
 User=pi
 Type=simple
-ExecStart=/usr/bin/python3 /home/pi/Projects/large-doorbell-button/doorbell.py
+ExecStart=/bin/pwd
 
 [Install]
 WantedBy=multi-user.target
