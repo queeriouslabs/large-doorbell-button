@@ -2,7 +2,7 @@
 Description=Front Doorbell
 
 [Service]
-WorkingDirectory=/home/pi/
+WorkingDirectory=/home/pi/Projects/large-doorbell-button/
 User=pi
 Type=simple
 ExecStart=/usr/bin/python3 /home/pi/Projects/large-doorbell-button/doorbell.py
