@@ -1,0 +1,9 @@
+[Unit]
+Description=Front Doorbell
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /home/pi/Projects/large-doorbell-button/doorbell.py
+
+[Install]
+WantedBy=multi-user.target
